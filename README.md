@@ -1,6 +1,6 @@
-# loyalty_card_storage_app
+# Loyalty Card Storage App
 
-A new Flutter project.
+A new Flutter project for storing and managing loyalty cards.
 
 ## Getting Started
 
