@@ -27,7 +27,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -41,48 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDgXvlXu5k6XdwNlhu13_PZ-aVVNGemfBs',
-    appId: '1:584824264003:web:1d1f08feb885f1ab224bf6',
-    messagingSenderId: '584824264003',
-    projectId: 'loyalty-card-storage-app',
-    authDomain: 'loyalty-card-storage-app.firebaseapp.com',
-    storageBucket: 'loyalty-card-storage-app.firebasestorage.app',
-    measurementId: 'G-T12GW98VK5',
+    apiKey: 'YOUR_API_KEY',
+    appId: 'YOUR_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    authDomain: 'YOUR_AUTH_DOMAIN',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAo5dNn-K0SNIfVtRgQQX3FS5BB2vI2aNk',
-    appId: '1:584824264003:android:647a7b3bfe2a3780224bf6',
-    messagingSenderId: '584824264003',
-    projectId: 'loyalty-card-storage-app',
-    storageBucket: 'loyalty-card-storage-app.firebasestorage.app',
+    apiKey: 'YOUR_API_KEY',
+    appId: 'YOUR_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCSH_b5VpRvs8BxJ6Do_f-iugXSyTiKtJQ',
-    appId: '1:584824264003:ios:909b497ff4595adb224bf6',
-    messagingSenderId: '584824264003',
-    projectId: 'loyalty-card-storage-app',
-    storageBucket: 'loyalty-card-storage-app.firebasestorage.app',
-    iosBundleId: 'com.example.loyaltyCardStorageApp',
+    apiKey: 'YOUR_API_KEY',
+    appId: 'YOUR_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
+    iosClientId: 'YOUR_IOS_CLIENT_ID',
+    iosBundleId: 'YOUR_IOS_BUNDLE_ID',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCSH_b5VpRvs8BxJ6Do_f-iugXSyTiKtJQ',
-    appId: '1:584824264003:ios:909b497ff4595adb224bf6',
-    messagingSenderId: '584824264003',
-    projectId: 'loyalty-card-storage-app',
-    storageBucket: 'loyalty-card-storage-app.firebasestorage.app',
-    iosBundleId: 'com.example.loyaltyCardStorageApp',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDgXvlXu5k6XdwNlhu13_PZ-aVVNGemfBs',
-    appId: '1:584824264003:web:0d94547816ab56bf224bf6',
-    messagingSenderId: '584824264003',
-    projectId: 'loyalty-card-storage-app',
-    authDomain: 'loyalty-card-storage-app.firebaseapp.com',
-    storageBucket: 'loyalty-card-storage-app.firebasestorage.app',
-    measurementId: 'G-PRRL3TBT5S',
+    apiKey: 'YOUR_API_KEY',
+    appId: 'YOUR_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
+    iosClientId: 'YOUR_IOS_CLIENT_ID',
+    iosBundleId: 'YOUR_IOS_BUNDLE_ID',
   );
 }

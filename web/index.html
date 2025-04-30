@@ -31,6 +31,72 @@
 
   <title>loyalty_card_storage_app</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase SDK -->
+  <!--
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-messaging-compat.js"></script>
+
+  <!-- Firebase Config -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXx", // You'll need to get this from Firebase Console
+      authDomain: "loyalty-card-storage-app.firebaseapp.com",
+      projectId: "loyalty-card-storage-app",
+      storageBucket: "loyalty-card-storage-app.appspot.com",
+      messagingSenderId: "584824264003",
+      appId: "1:584824264003:web:YOUR_WEB_APP_ID" // You'll need to get this from Firebase Console
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  -->
+
+  <!-- Dummy Credentials for Testing -->
+  <script>
+    // Dummy user credentials for testing
+    const dummyUsers = {
+      "test@example.com": {
+        password: "password123",
+        name: "Test User",
+        cards: [
+          {
+            id: "1",
+            name: "Starbucks Card",
+            number: "1234567890",
+            barcode: "1234567890",
+            expiryDate: "2024-12-31",
+            isFavorite: true
+          },
+          {
+            id: "2",
+            name: "Amazon Prime",
+            number: "9876543210",
+            barcode: "9876543210",
+            expiryDate: "2025-06-30",
+            isFavorite: false
+          }
+        ]
+      },
+      "user@example.com": {
+        password: "password456",
+        name: "Demo User",
+        cards: [
+          {
+            id: "3",
+            name: "Netflix",
+            number: "5555555555",
+            barcode: "5555555555",
+            expiryDate: "2024-08-15",
+            isFavorite: true
+          }
+        ]
+      }
+    };
+  </script>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
